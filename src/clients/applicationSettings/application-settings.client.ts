@@ -1,11 +1,11 @@
-import { BaasicAppClient } from '../index'
+import { BaasicApp } from 'baasic-sdk-javascript'
 
 import { IBaasicQueryModel, IGetRequestOptions, IHttpResponse, IOptions } from '../../infrastructure/common/contracts';
 import { IApplication } from './contracts';
 
 export class ApplicationSettingsClient {
 
-    constructor(private baasicApp: BaasicAppClient) { }
+    constructor(private baasicApp: BaasicApp) { }
 
     /**                 
      * Returns a promise that is resolved once the get action has been performed. Success response returns the application settings resource.                 

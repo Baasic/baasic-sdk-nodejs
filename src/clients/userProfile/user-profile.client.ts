@@ -1,4 +1,4 @@
-import { BaasicAppClient } from '../index'
+import { BaasicApp } from 'baasic-sdk-javascript'
 
 import { IACLOptions, IACLPolicy, IBaasicQueryModel, IGetRequestOptions, IHttpResponse, IOptions } from '../../infrastructure/common/contracts';
 import {
@@ -18,7 +18,7 @@ import {
 
 export class UserProfileClient {
 
-    constructor(private baasicApp: BaasicAppClient) { }
+    constructor(private baasicApp: BaasicApp) { }
 
     get profile(): IUserProfileClient {
         let baasicApp = this.baasicApp;

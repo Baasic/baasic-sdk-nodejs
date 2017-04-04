@@ -1,4 +1,3 @@
-export * from './baasicApp.client';
 export * from './applicationSettings/application-settings.client';
 export * from './keyValue/key-value.client';
 export * from './valueSet/value-set.client';

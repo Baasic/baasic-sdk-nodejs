@@ -1,10 +1,10 @@
-import { BaasicAppClient } from '../index'
+import { BaasicApp } from 'baasic-sdk-javascript'
 import { IBaasicQueryModel, IGetRequestOptions, IHttpResponse, IOptions } from '../../infrastructure/common/contracts';
 import { IKeyValue } from './contracts';
 
 export class KeyValueClient {
 
-    constructor(private baasicApp: BaasicAppClient) { }
+    constructor(private baasicApp: BaasicApp) { }
 
     /**
      * Returns a promise that is resolved once the find action has been performed. Success response returns a list of key value resources matching the given criteria.

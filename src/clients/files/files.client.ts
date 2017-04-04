@@ -1,11 +1,11 @@
-import { BaasicAppClient } from '../index'
+import { BaasicApp } from 'baasic-sdk-javascript'
 
 import { IACLOptions, IACLPolicy, IACLClient, IBaasicQueryModel, IGetRequestOptions, IHttpResponse, IOptions } from '../../infrastructure/common/contracts';
 import { IFileEntry, IFilesBatchClient, IFilesStreamsClient } from './contracts';
 
 export class FilesClient {
 
-    constructor(private baasicApp: BaasicAppClient) { }
+    constructor(private baasicApp: BaasicApp) { }
 
     /**                  
      * Returns a promise that is resolved once the find action has been performed. Success response returns a list of file resources matching the given criteria.                  

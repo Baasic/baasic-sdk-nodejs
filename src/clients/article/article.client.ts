@@ -1,4 +1,4 @@
-import { BaasicAppClient } from '../index'
+import { BaasicApp } from 'baasic-sdk-javascript'
 
 import { IACLOptions, IACLPolicy, IBaasicQueryModel, IGetRequestOptions, IHttpResponse, IOptions } from '../../infrastructure/common/contracts';
 import {
@@ -24,7 +24,7 @@ import {
 
 export class ArticleClient {
 
-    constructor(private baasicApp: BaasicAppClient) { }
+    constructor(private baasicApp: BaasicApp) { }
 
     get articles(): IArticleInstanceClient {
         let baasicApp = this.baasicApp;

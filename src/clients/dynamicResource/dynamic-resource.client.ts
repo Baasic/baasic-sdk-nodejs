@@ -1,11 +1,11 @@
-import { BaasicAppClient } from '../index'
+import { BaasicApp } from 'baasic-sdk-javascript'
 
 import { IACLPolicy, IBaasicQueryModel, IGetRequestOptions, IHttpResponse, IOptions } from '../../infrastructure/common/contracts';
 import { IDynamicACLOptions, IDynamicObject, IDynamicResourceACLClient, IDynamicResourceSchemaClient, IResourceSchema } from './contracts';
 
 export class DynamicResourceClient {
 
-    constructor(private baasicApp: BaasicAppClient) { }
+    constructor(private baasicApp: BaasicApp) { }
 
     /**                  
      * Returns a promise that is resolved once the find action has been performed. Success response returns a list of dynamic resources matching the given criteria.                  

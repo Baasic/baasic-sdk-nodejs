@@ -1,4 +1,4 @@
-import { BaasicAppClient } from '../index'
+import { BaasicApp } from 'baasic-sdk-javascript'
 
 import { IBaasicQueryModel, IGetRequestOptions, IHttpResponse, IOptions } from '../../infrastructure/common/contracts';
 import {
@@ -15,7 +15,7 @@ import {
 
 export class NotificationsClient {
 
-    constructor(private baasicApp: BaasicAppClient) { }
+    constructor(private baasicApp: BaasicApp) { }
 
     get publish(): INotificationsPublishClient {
         let baasicApp = this.baasicApp;

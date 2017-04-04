@@ -1,11 +1,11 @@
-import { BaasicAppClient } from '../index'
+import { BaasicApp } from 'baasic-sdk-javascript'
 
 import { IBaasicResponse, IBaasicQueryModel, IGetRequestOptions, IHttpResponse, IOptions } from '../../infrastructure/common/contracts';
 import { ITemplate, ITemplatingBatchClient } from './contracts';
 
 export class TemplatingClient {
 
-    constructor(private baasicApp: BaasicAppClient) { }
+    constructor(private baasicApp: BaasicApp) { }
 
     /**                 
      * Returns a promise that is resolved once the find action has been performed. Success response returns a list of template resources matching the given criteria.                 
