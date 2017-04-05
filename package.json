@@ -42,6 +42,6 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "baasic-sdk-javascript": "2.0.0-rc.15"
+    "baasic-sdk-javascript": "2.0.0-rc.16"
   }
 }

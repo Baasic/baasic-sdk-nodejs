@@ -1,5 +1,7 @@
 import { IBaasicOptions, BaasicApp as BaasicSdkApp } from 'baasic-sdk-javascript';
 import { HttpClient } from './infrastructure/httpApi/http-client';
+import { InMemoryStorageHandler } from './infrastructure/store';
+import { EventHandler } from './infrastructure/event.handler';
 
 import {
     ApplicationSettingsClient,
@@ -27,8 +29,10 @@ export class BaasicApp {
 };
 
 function getOptions(options: Partial<IBaasicOptions>): Partial<IBaasicOptions> {
-    var defaults = {
-        httpClient: () => new HttpClient()
+    var defaults : Partial<IBaasicOptions> = {
+        httpClient: () => new HttpClient(),
+        storageHandler: () => new InMemoryStorageHandler(),
+        eventHandler: () => new EventHandler()
     }
 
     return Object.assign({}, defaults, options);
