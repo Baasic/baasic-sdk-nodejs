@@ -1,12 +1,17 @@
-export * from './IBaasicModel';
-export * from './IBaasicQueryModel';
-export * from './IOptions';
 export * from './IException';
-export * from './IBaasicResponse';
-export * from './IGetRequestOptions';
-export * from './IHttpHeaders';
-export * from './IHttpRequest';
-export * from './IHttpResponse';
+export {
+    IModel as IBaasicModel,
+    IHttpRequest,
+    IQueryModel as IBaasicQueryModel,
+    IOptions,
+    IQueryOptions,
+    IResponse as IBaasicResponse,
+    IGetRequestOptions,
+    IHttpHeaders,
+    IHttpResponse
+} from 'baasic-sdk-javascript';
+
 export * from './ACL';
-export * from './IUserInfo';
+import { Membership } from 'baasic-sdk-javascript';
+export import IUserInfo = Membership.IUserInfo;
 export * from './IConfiguration';

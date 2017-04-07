@@ -1,5 +1,9 @@
-export * from './media-vault-derived-entry.model';
-export * from './media-entry.model';
-export * from './media-vault-settings.model';
-export * from './preprocessing-provider-settings.model';
+
+import { MediaVault } from 'baasic-sdk-javascript';
+
+export import IMediaVaultDerivedEntry = MediaVault.IMediaVaultDerivedEntry;
+export import IMediaEntry = MediaVault.IMediaEntry;
+export import IMediaVaultSettings = MediaVault.IMediaVaultSettings;
+export import IPreprocessingProviderSettings = MediaVault.IPreprocessingProviderSettings;
+
 export * from './media-vault-clients';
