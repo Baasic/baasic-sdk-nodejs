@@ -8,7 +8,6 @@ import * as urlUtil from 'url';
 
 export class BaasicApp {
     private readonly app: BaasicSdkApp;
-    public readonly membership: MembershipClient;
 
     public readonly membershipClient: clients.MembershipClient;
     //Modules
@@ -81,7 +80,7 @@ function getOptions(options: Partial<IBaasicOptions>): Partial<IBaasicOptions> {
             var urlObject = urlUtil.parse(url);
             urlObject.toString = () => urlUtil.format(urlObject);
             return urlObject as URL;
-        } 
+        }
     }
 
     return Object.assign({}, defaults, options);
