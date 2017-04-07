@@ -17,6 +17,6 @@ export class InMemoryStorageHandler implements IStorageHandler
     }
 
     get(key: string): any {
-        return this.storage[key];
+        return this.storage[key] || null;
     }
 }
