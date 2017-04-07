@@ -1,4 +1,6 @@
-export * from './metering-category.model';
-export * from './metering-data.model';
-export * from './metering-settings.model';
+import { Metering } from 'baasic-sdk-javascript';
+export import IMeteringCategory = Metering.IMeteringCategory;
+export import IMeteringData = Metering.IMeteringData;
+export import IMeteringSettings = Metering.IMeteringSettings;
+
 export * from './metering-clients';

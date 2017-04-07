@@ -1,6 +1,6 @@
 {
   "name": "baasic-sdk-nodejs",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "NodeJS SDK provides core functionality for building web and mobile applications on [Baasic](http://www.baasic.com/).",
   "keywords": ["Baasic", "BaaS", "sdk", "JavaScript", "NodeJS", "Backend", "browser", "client-side"],
   "homepage": "http://www.baasic.com/",
@@ -42,6 +42,6 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "baasic-sdk-javascript": "2.0.0-rc.16"
+    "baasic-sdk-javascript": "2.0.0-rc.19"
   }
 }
