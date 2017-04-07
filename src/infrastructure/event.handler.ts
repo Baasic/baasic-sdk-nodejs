@@ -1,10 +1,6 @@
 import { EventEmitter } from 'events';
 import { IEventHandler } from 'baasic-sdk-javascript';
 
-class Emitter extends EventEmitter {
-
-}
-
 export class EventHandler implements IEventHandler
 {
     private readonly emitter = new EventEmitter();
